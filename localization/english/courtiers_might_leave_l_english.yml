@@ -1,0 +1,21 @@
+﻿l_english:
+  action_courtiers_might_leave: "[recipient.GetShortUINameNoTooltip] might leave"
+  action_courtiers_might_leave_label: "$action_courtiers_might_leave$"
+  action_courtiers_might_leave_desc: "[recipient.GetShortUINameNoTooltip] might leave [actor.GetShortUINamePossessive] [court|E]. [recipient.GetSheHe|U] will stay if given a reason, such as employment as a $knight_culture_player$ or a [councillor|E]."
+  action_courtiers_might_leave_click: "#I Click to see [recipient.GetHerHim]#!"
+  action_courtiers_might_leave_combined_label: "[recipient.GetRelationToString( GetPlayer )], [recipient.GetShortUINameNoTooltip]"
+  action_courtiers_might_leave_combined_group_name: "Your courtiers might leave"
+  action_courtiers_might_leave_combined_group_label: "$action_courtiers_might_leave_combined_group_name$"
+  action_courtiers_might_leave_combined_group_description: "Several of your courtiers might leave [actor.GetShortUINamePossessive] [court|E]."
+
+  enable_watch_courtiers_decision: "Watch Courtiers #N (DISABLED)#!"
+  enable_watch_courtiers_decision_desc: "Some courtiers might leave [ROOT.Char.GetShortUINamePossessive] [court|E] without notice. But your loyal advisor can watch them for you. Would you like to be informed about them, my [ROOT.Char.GetLadyLord]?"
+  enable_watch_courtiers_decision_tooltip: "Enable notifications about courtiers who might leave"
+  enable_watch_courtiers_decision_confirm: "Yes, nobody shall leave without my permit"
+  enable_watch_courtiers_decision_effect: "#P You will be notified about courtiers who might leave.#!"
+
+  disable_watch_courtiers_decision: "Watch Courtiers #P (ENABLED)#!"
+  disable_watch_courtiers_decision_desc: "$enable_watch_courtiers_decision_desc$"
+  disable_watch_courtiers_decision_tooltip: "Disable notifications about courtiers who might leave"
+  disable_watch_courtiers_decision_confirm: "Let them seek their fortune somewhere else"
+  disable_watch_courtiers_decision_effect: "#N You won't be notified about courtiers who might leave anymore.#!"

@@ -1,0 +1,6 @@
+﻿courtier_might_leave = {
+	any_traveling_family_member = {
+		count = all
+		courtier_allowed_to_leave_trigger = yes
+	}
+}

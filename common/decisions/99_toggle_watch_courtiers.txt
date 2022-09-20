@@ -1,0 +1,65 @@
+﻿enable_watch_courtiers_decision = {
+	picture = "gfx/interface/illustrations/decisions/courtiers_might_leave.dds"
+	ai_check_interval = 0
+
+	sort_order = -5
+
+	desc = enable_watch_courtiers_decision_desc
+	selection_tooltip = enable_watch_courtiers_decision_tooltip
+	
+	is_shown = {
+		is_landed = yes
+		NOT = {
+			has_character_flag = is_watching_courtiers
+		}
+		save_temporary_scope_as = liege
+		any_courtier = {
+			courtier_might_leave = yes
+		}
+	}
+
+	effect = {
+		custom_tooltip = enable_watch_courtiers_decision_effect
+		hidden_effect = {
+			add_character_flag = is_watching_courtiers
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+disable_watch_courtiers_decision = {
+	picture = "gfx/interface/illustrations/decisions/courtiers_might_leave.dds"
+	ai_check_interval = 0
+
+	sort_order = -5
+
+	desc = disable_watch_courtiers_decision_desc
+	selection_tooltip = disable_watch_courtiers_decision_tooltip
+
+	is_shown = {
+		is_landed = yes
+		has_character_flag = is_watching_courtiers
+	}
+
+	effect = {
+		custom_tooltip = disable_watch_courtiers_decision_effect
+		hidden_effect = {
+			remove_character_flag = is_watching_courtiers
+		}
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
