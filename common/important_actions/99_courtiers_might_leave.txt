@@ -11,6 +11,7 @@
 			every_courtier = {
 				limit = {
 					courtier_might_leave = yes
+					moc_compatibility = yes
 				}
 				try_create_important_action = {
 					important_action_type = action_courtiers_might_leave

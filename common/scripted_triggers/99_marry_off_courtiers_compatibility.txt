@@ -1,0 +1,35 @@
+﻿cml_is_dynasty_member = {
+	exists = dynasty
+	exists = root
+	dynasty = root.dynasty
+}
+
+moc_compatibility = {
+	trigger_if = {
+		limit = {
+			has_global_variable = disable_marrying_off_unworthy_courtiers
+			cml_is_dynasty_member = no
+		}
+		OR = {
+			has_trait = beauty_good_1
+			has_trait = beauty_good_2
+			has_trait = beauty_good_3
+			has_trait = intellect_good_1
+			has_trait = intellect_good_2
+			has_trait = intellect_good_3
+			has_trait = physique_good_1
+			has_trait = physique_good_2
+			has_trait = physique_good_3
+			has_trait = fecund
+			has_trait = pure_blooded
+		}
+	}
+
+	trigger_if = {
+		limit = {
+			has_global_variable = disable_marrying_off_infertile_courtiers
+			cml_is_dynasty_member = no
+		}
+		is_visibly_fertile = yes
+	}
+}
