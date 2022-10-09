@@ -7,7 +7,7 @@
 moc_compatibility = {
 	trigger_if = {
 		limit = {
-			has_character_flag = disable_marrying_off_unworthy_courtiers
+			root = { has_character_flag = disable_marrying_off_unworthy_courtiers }
 			cml_is_dynasty_member = no
 		}
 		OR = {
@@ -27,7 +27,7 @@ moc_compatibility = {
 
 	trigger_if = {
 		limit = {
-			has_character_flag = disable_marrying_off_infertile_courtiers
+			root = { has_character_flag = disable_marrying_off_infertile_courtiers }
 			cml_is_dynasty_member = no
 		}
 		is_visibly_fertile = yes
