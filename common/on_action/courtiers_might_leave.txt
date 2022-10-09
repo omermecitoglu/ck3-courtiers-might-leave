@@ -1,0 +1,17 @@
+﻿on_death = {
+	on_actions = {
+		courtiers_might_leave_on_death
+	}
+}
+
+courtiers_might_leave_on_death = {
+	trigger = {
+		has_character_flag = is_watching_courtiers
+		exists = player_heir
+	}
+	effect = {
+		player_heir = {
+			add_character_flag = is_watching_courtiers
+		}
+	}
+}
